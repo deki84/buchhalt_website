@@ -1,42 +1,21 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
-import { FaPhone, FaEnvelope } from 'react-icons/fa';
+
+import { FaPhone } from 'react-icons/fa';
+
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-blue-500 font-[Cambria]">
       {/* 🔷 HEADER mit Logo und Navigation */}
-      <header className="bg-blue-800 py-3">
-        <div className="max-w-screen-lg mx-auto px-4 flex items-center justify-between">
-          {/* Logo links */}
-          <Link href="/">
-            <Image
-              src="/logo_buchhalt.png" // Hier dein Logo (liegt im public-Ordner)
-              alt="Logo Buchhalt.de"
-              width={60}
-              height={60}
-              className="rounded-full"
-            />
-          </Link>
 
-          {/* Navigation rechts */}
-          <nav>
-            <ul className="flex space-x-4 text-white text-sm font-medium">
-              <li><a href="#home" className="hover:underline">Startseite</a></li>
-              <li><a href="#about" className="hover:underline">Über uns</a></li>
-              <li><a href="#services" className="hover:underline">Leistungen</a></li>
-              <li><a href="#contact" className="hover:underline">Kontakt</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      
 
       {/* 🟦 HERO-SECTION mit Hintergrundbild */}
       <section
-  id="home"
-  className="relative bg-cover bg-center h-[45vh] flex items-center justify-center text-center"
+  id="home" 
+  className=" scroll-mt-20 relative bg-cover bg-center h-[35vh] flex items-center justify-center text-center"
   style={{ backgroundImage: "url('/hero-image.png')" }}
 >
   {/* bläulicher Overlay mit Transparenz */}
@@ -58,7 +37,7 @@ export default function Home() {
 </div>
 
       {/* 🟨 KONTAKTBLOCK unter Hero */}
-      <div className="bg-white text-center py-12 px-4" id="contact">
+      <div className="bg-white text-center py-12 px-4" >
         <h2 className="text-3xl font-bold text-blue-800 mb-4 font-[Cambria]">Kontaktieren Sie uns</h2>
 
         <p className="text-gray-800 text-base">
@@ -85,20 +64,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ⚫ FOOTER mit rechtlichen Links */}
-      <footer className="bg-blue-800 text-white py-6">
-        <div className="max-w-screen-md mx-auto px-4 text-center">
-          <p className="text-sm">&copy; 2025 buchhalt.de. Alle Rechte vorbehalten.</p>
-
-          <nav className="mt-3">
-            <ul className="flex justify-center space-x-5 text-sm">
-              <li><Link href="/impressum" className="hover:underline">Impressum</Link></li>
-              <li><Link href="/datenschutz" className="hover:underline">Datenschutz</Link></li>
-              <li><Link href="/agb" className="hover:underline">AGB</Link></li>
-            </ul>
-          </nav>
-        </div>
-      </footer>
+   
     </main>
   );
 }
