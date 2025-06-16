@@ -62,7 +62,7 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-blue-800 mb-4 font-[Cambria]">Kontaktieren Sie uns</h2>
 
         <p className="text-gray-800 text-base">
-    Telefon: <a href="tel:+4915208883747" className="text-blue-800 font-semibold hover:underline">01520 8883747</a>
+    Telefon: <a href="tel:+4982144423383" className="text-blue-800 font-semibold hover:underline">0821 444 233 83</a>
   </p>
   <p className="text-gray-800 text-base mt-3">
     Email: <a href="mailto:info@buchhalt.de" className="text-blue-800 font-semibold hover:underline">info@buchhalt.de</a>
@@ -70,7 +70,7 @@ export default function Home() {
         <div className="flex justify-center gap-4">
          
           <a
-            href="tel:+491234567890"
+            href="tel:+4917696724525"
             className="mt-6 bg-blue-800 text-white font-[Cambria] px-5 py-2 rounded-2xl shadow-md hover:bg-blue-500 transition inline-flex items-center gap-2"
           >   
               <FaPhone className="text-white text-lg rotate-180" />
