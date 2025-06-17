@@ -21,18 +21,13 @@ export default function AboutPage() {
   
         {/* Raum-Fotos */}
         <div className="flex flex-wrap justify-center gap-6 mb-12">
-          <img src="/images/raum1.jpg" alt="Büroansicht" className="w-72 rounded-lg shadow-md" />
-          <img src="/images/raum2.jpg" alt="Besprechungsraum" className="w-72 rounded-lg shadow-md" />
-          <img src="/images/raum3.jpg" alt="Empfangsbereich" className="w-72 rounded-lg shadow-md" />
+          <img src="/buchhalt_buero1.jpeg" alt="Büroansicht" className="w-72 rounded-lg shadow-md" />
+          <img src="/buchhalt_buero2.jpeg" alt="Besprechungsraum" className="w-72 rounded-lg shadow-md" />
+          <img src="/buchhalt_buero3.jpeg" alt="Empfangsbereich" className="w-72 rounded-lg shadow-md" />
         </div>
   
         {/* Lexware-Hinweis */}
-        <div className="flex flex-col items-center">
-          <p className="text-lg text-gray-700 font-[Cambria] mb-4 max-w-xl">
-            Wir arbeiten mit <strong>Lexware</strong> – Buchhaltungssoftware mit DATEV-Schnittstelle
-          </p>
-          <img src="/images/lexware-logo.png" alt="Lexware Logo" className="w-48 h-auto" />
-        </div>
+    
       </section>
     );
   }

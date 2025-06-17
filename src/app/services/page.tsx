@@ -7,15 +7,11 @@ export default function ServicePage() {
         </h2>
   
         {/* Lexware Hinweis */}
-        <div className="flex flex-col items-center justify-center mb-10">
-          <p className="text-lg text-gray-700 max-w-2xl font-[Cambria]">
+        <div className="flex flex-col items-center">
+          <p className="text-lg text-gray-700 font-[Cambria] mb-4 max-w-xl">
             Wir arbeiten mit <strong>Lexware</strong> – Buchhaltungssoftware mit DATEV-Schnittstelle
           </p>
-          <img
-            src="/images/lexware-logo.png"
-            alt="Lexware Logo"
-            className="mt-4 w-48 h-auto"
-          />
+          <img src="/lexware-office-logo.png" alt="Lexware Logo" className="w-48 h-auto" />
         </div>
   
         {/* Leistungsübersicht */}
@@ -28,16 +24,13 @@ export default function ServicePage() {
             <h3 className="text-xl font-semibold text-blue-900 mb-2">Rechnungswesen</h3>
             <p>Verarbeitung von Belegen, Erstellung interner Übersichten & Auswertungen.</p>
           </div>
-          <div className="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition">
+          <div className="p-6 bg-gray-100 rounded-lg  shadow hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-blue-900 mb-2">Digitale Prozesse</h3>
             <p>Digitale Zusammenarbeit mit DATEV/LEXWARE-Schnittstelle für effiziente Abläufe.</p>
           </div>
         </div>
   
-        {/* §6 Hinweis */}
-        <p className="mt-10 italic text-sm text-gray-600 max-w-3xl mx-auto border border-dashed border-blue-300 p-4 rounded font-[Cambria]">
-          Erbracht werden ausschließlich Leistungen gem. § 6 Nr. 3 und 4 des StBerG, ohne Rechts- und Steuerberatung.
-        </p>
+   
       </section>
     );
   }

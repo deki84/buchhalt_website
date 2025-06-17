@@ -34,7 +34,7 @@ export default function Home() {
 </div>
 
       {/* 🟨 KONTAKTBLOCK unter Hero */}
-      <div className="bg-white text-center py-12 px-4" >
+      <div className="bg-white mb-4 text-center pt-6  px-4" >
         <h2 className="text-3xl font-bold text-blue-800 mb-4 font-[Cambria]">Kontaktieren Sie uns</h2>
 
         <p className="text-gray-800 text-base">
