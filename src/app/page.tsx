@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 
 import { FaPhone } from 'react-icons/fa';
 
