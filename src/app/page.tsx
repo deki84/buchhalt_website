@@ -6,12 +6,12 @@ import { FaPhone } from 'react-icons/fa';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-blue-500 font-[Cambria]">
+    <main className="bg-white text-blue-500 font-[Cambria]">
    
 
       <section
   id="home" 
-  className=" scroll-mt-20 relative bg-cover bg-center h-[35vh] flex items-center justify-center text-center"
+  className=" scroll-mt-20 relative bg-cover bg-center h-[30vh] flex items-center justify-center text-center"
   style={{ backgroundImage: "url('/hero-image.png')" }}
 >
   {/* bläulicher Overlay mit Transparenz */}

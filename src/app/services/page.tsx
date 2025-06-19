@@ -11,7 +11,7 @@ export default function ServicePage() {
           <p className="text-lg text-gray-700 font-[Cambria] mb-4 max-w-xl">
             Wir arbeiten mit <strong>Lexware</strong> – Buchhaltungssoftware mit DATEV-Schnittstelle
           </p>
-          <img src="/lexware-office-logo.png" alt="Lexware Logo" className="w-48 h-auto" />
+        
         </div>
   
         {/* Leistungsübersicht */}
@@ -28,6 +28,7 @@ export default function ServicePage() {
             <h3 className="text-xl font-semibold text-blue-900 mb-2">Digitale Prozesse</h3>
             <p>Digitale Zusammenarbeit mit DATEV/LEXWARE-Schnittstelle für effiziente Abläufe.</p>
           </div>
+            <img src="/lexware-office-logo.png" alt="Lexware Logo" className="w-48 h-auto" />
         </div>
   
    

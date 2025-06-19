@@ -20,11 +20,23 @@ export default function AboutPage() {
         </div>
   
         {/* Raum-Fotos */}
-        <div className="flex flex-wrap justify-center gap-6 mb-12">
-          <img src="/buchhalt_buero1.jpeg" alt="Büroansicht" className="w-72 rounded-lg shadow-md" />
-          <img src="/buchhalt_buero2.jpeg" alt="Besprechungsraum" className="w-72 rounded-lg shadow-md" />
-          <img src="/buchhalt_buero3.jpeg" alt="Empfangsbereich" className="w-72 rounded-lg shadow-md" />
-        </div>
+        <div className="flex flex-wrap justify-center items-start gap-6 mb-6">
+        <img
+          src="/buchhalt_buero1.jpeg"
+          alt="Büroansicht"
+          className="w-72 rounded-lg shadow-md"
+        />
+        <img
+          src="/buchhalt_buero2.jpeg"
+          alt="Besprechungsraum"
+          className="w-72 rounded-lg shadow-md"
+        />
+        <img
+          src="/buchhalt_buero3.jpeg"
+          alt="Empfangsbereich"
+          className="w-72 rounded-lg shadow-md"
+        />
+      </div>
   
         {/* Lexware-Hinweis */}
     
