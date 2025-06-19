@@ -28,10 +28,17 @@ export default function ServicePage() {
             <h3 className="text-xl font-semibold text-blue-900 mb-2">Digitale Prozesse</h3>
             <p>Digitale Zusammenarbeit mit DATEV/LEXWARE-Schnittstelle für effiziente Abläufe.</p>
           </div>
-            <img src="/lexware-office-logo.png" alt="Lexware Logo" className="w-48 h-auto" />
+
         </div>
-  
-   
+  {/* Lexware Logo */}
+<div className="col-span-full flex justify-center mt-6">
+  <img
+    src="/lexware-office-logo.png"
+    alt="Lexware Logo"
+    className="w-48 h-auto"
+  />
+</div>
+
       </section>
     );
   }
