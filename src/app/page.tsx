@@ -11,7 +11,7 @@ export default function Home() {
 
       <section
   id="home" 
-  className=" scroll-mt-20 relative bg-cover bg-center h-[30vh] flex items-center justify-center text-center"
+  className="w-full-screen scroll-mt-20 relative bg-cover bg-center h-[30vh] flex items-center justify-center text-center"
   style={{ backgroundImage: "url('/hero-image.png')" }}
 >
   {/* bläulicher Overlay mit Transparenz */}

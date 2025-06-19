@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import LayoutWrapper from "./components/LayoutWrapper";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 
 
@@ -13,14 +14,27 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-   <html lang="de" >
-      <body className="flex flex-col min-h-screen font-[Cambria] text-blue-900 bg-white">
-        <LayoutWrapper>{children}</LayoutWrapper>
+    <html lang="de" className="h-screen overflow-hidden">
+      <body className="h-full">
+        <div className="h-full flex flex-col">
+          <header className="fixed top-0 left-0 right-0 z-50">
+            <Header />
+          </header>
+
+          <main className="mt-[80px] mb-[80px] flex-1 overflow-y-auto ">
+            {children}
+          </main>
+
+          <footer className="fixed bottom-0 left-0 right-0 z-50">
+            <Footer />
+          </footer>
+        </div>
       </body>
     </html>
   );
 }
+
