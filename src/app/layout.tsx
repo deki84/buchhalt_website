@@ -17,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-   <html lang="de">
-      <body>
+   <html lang="de" >
+      <body className="flex flex-col min-h-screen font-[Cambria] text-blue-900 bg-white">
         <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
