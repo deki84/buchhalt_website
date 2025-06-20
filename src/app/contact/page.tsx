@@ -10,16 +10,7 @@ export default function ContactPage() {
     message: '',
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Hier später: Versand via API oder E-Mail-Service
-    console.log('Formulardaten:', formData);
-    alert('Nachricht erfolgreich gesendet.');
-  };
 
   return (
    <section className="bg-white py-16 px-6 text-center font-[Cambria]">
