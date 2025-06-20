@@ -52,43 +52,40 @@ export default function ContactPage() {
   </form>
 
   {/* Alternativkontakt */}
+<div className="mt-12 flex flex-col items-center justify-center space-y-6 text-base text-gray-800 font-[Cambria] px-4 w-full">
 
-<div className="mt-12 space-y-3 text-base text-gray-800 font-[Cambria] max-w-md mx-auto">
-  {/* Telefon */}
-  <div className="flex items-start gap-3">
-    <FaPhone className="text-blue-800 w-5 h-5 mt-1 rotate-180" />
-    <p>
-      <span className="font-semibold text-blue-900">Telefon Festnetz:</span>{' '}
-      <a href="tel:+4982144423383" className="text-blue-800 hover:underline">
-        0821 444 233 83
+  {/* Einzelner Kontaktblock */}
+  {[
+    {
+      icon: <FaPhone className="text-blue-800 w-5 h-5 rotate-180" />,
+      label: 'Telefon Festnetz:',
+      value: '0821 444 233 83',
+      href: 'tel:+4982144423383'
+    },
+    {
+      icon: <FaMobileAlt className="text-blue-800 w-5 h-5" />,
+      label: 'Mobil (auch WhatsApp):',
+      value: '0176 96724525',
+      href: 'tel:+4917696724525'
+    },
+    {
+      icon: <FaEnvelope className="text-blue-800 w-5 h-5" />,
+      label: 'E-Mail:',
+      value: 'jelena.dordevic@buchhalt.de',
+      href: 'mailto:jelena.dordevic@buchhalt.de'
+    }
+  ].map((item, idx) => (
+    <div key={idx} className="flex flex-col items-center text-center">
+      <div className="flex items-center gap-2 mb-1">
+        {item.icon}
+        <span className="font-semibold text-blue-900">{item.label}</span>
+      </div>
+      <a href={item.href} className="text-blue-800 hover:underline">
+        {item.value}
       </a>
-    </p>
-  </div>
+    </div>
+  ))}
 
-  {/* Mobil */}
-  <div className="flex items-start gap-3">
-    <FaMobileAlt className="text-blue-800 w-5 h-5 mt-1" />
-    <p>
-      <span className="font-semibold text-blue-900">Mobil (auch WhatsApp):</span>{' '}
-      <a href="tel:+4917696724525" className="text-blue-800 hover:underline">
-        0176 96724525
-      </a>
-    </p>
-  </div>
-
-  {/* E-Mail */}
-  <div className="flex items-start gap-3">
-    <FaEnvelope className="text-blue-800 w-5 h-5 mt-1" />
-    <p>
-      <span className="font-semibold text-blue-900">E-Mail:</span>{' '}
-      <a
-        href="mailto:jelena.dordevic@buchhalt.de"
-        className="text-blue-800 hover:underline"
-      >
-        jelena.dordevic@buchhalt.de
-      </a>
-    </p>
-  </div>
 </div>
       </section>
     </div>
