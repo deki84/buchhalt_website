@@ -1,6 +1,6 @@
 export default function AgbPage() {
   return (
-    <section className="max-w-4xl mx-auto px-6 py-12 text-blue-900 font-[Cambria] text-[15px]">
+    <section className="max-w-4xl mx-auto bg-white pt-4 sm:pt-6  py-12 text-blue-900 font-[Cambria] text-[15px]">
       <h1 className="text-3xl font-bold mb-8 text-center text-blue-800">
         Allgemeine Geschäftsbedingungen (AGB)
       </h1>

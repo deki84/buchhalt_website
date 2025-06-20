@@ -1,23 +1,13 @@
-import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-
-
-
-
-
-export const metadata = {
-  title: 'Buchhalt',
-  description: 'Ihre zuverlässige Buchhaltung',
-};
+import Header from './components/Header';
+import Footer from './components/Footer';
+import './globals.css';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="de">
-      <body className="m-0 p-0 bg-white text-blue-900 font-[Cambria]">
+      <body className="flex flex-col min-h-screen font-[Cambria] bg-white text-blue-900">
         <Header />
-        {/* Hero außerhalb von <main> */}
-        {children}
+        <main className="flex-grow">{children}</main>
         <Footer />
       </body>
     </html>

@@ -1,6 +1,6 @@
 export default function ImpressumPage() {
   return (
-    <section className="max-w-3xl mx-auto px-6 py-12 text-blue-900 font-[Cambria] text-[15px]">
+    <section className="bg-white pt-8 pb-12 px-6 text-center text-blue-900 font-[Cambria] text-[15px]">
       <h1 className="text-3xl font-bold mb-8 text-center text-blue-800">
         Impressum
       </h1>

@@ -9,7 +9,8 @@ export default function ContactPage() {
 
 
   return (
-   <section className="bg-white py-16 px-6 text-center font-[Cambria]">
+    <div className="min-h-screen flex-grow flex flex-col">
+      <section className="min-h-[80vh] bg-white pt-12 pb-32 px-6 text-center font-[Cambria]">
   <h2 className="text-3xl font-bold text-blue-800 mb-8">Kontaktformular</h2>
 
   <form className="max-w-xl mx-auto space-y-6 text-left">
@@ -51,36 +52,44 @@ export default function ContactPage() {
   </form>
 
   {/* Alternativkontakt */}
-<div className="mt-12 flex flex-col items-start justify-center text-gray-800 text-base font-[Cambria] space-y-3 mx-auto w-fit">
-  <div className="flex items-center space-x-3">
-    <FaPhone  className="text-blue-800 w-5 h-5 rotate-180" />
-    <span>
-      Telefon Festnetz:{" "}
-      <a href="tel:+4982144423383" className="text-blue-800 font-semibold hover:underline">
+
+<div className="mt-12 space-y-3 text-base text-gray-800 font-[Cambria] max-w-md mx-auto">
+  {/* Telefon */}
+  <div className="flex items-start gap-3">
+    <FaPhone className="text-blue-800 w-5 h-5 mt-1 rotate-180" />
+    <p>
+      <span className="font-semibold text-blue-900">Telefon Festnetz:</span>{' '}
+      <a href="tel:+4982144423383" className="text-blue-800 hover:underline">
         0821 444 233 83
       </a>
-    </span>
+    </p>
   </div>
 
-  <div className="flex items-center space-x-3">
-    <FaMobileAlt className="text-blue-800 w-5 h-5" />
-    <span>
-      Mobil (auch WhatsApp):{" "}
-      <a href="tel:+4917696724525" className="text-blue-800 font-semibold hover:underline">
+  {/* Mobil */}
+  <div className="flex items-start gap-3">
+    <FaMobileAlt className="text-blue-800 w-5 h-5 mt-1" />
+    <p>
+      <span className="font-semibold text-blue-900">Mobil (auch WhatsApp):</span>{' '}
+      <a href="tel:+4917696724525" className="text-blue-800 hover:underline">
         0176 96724525
       </a>
-    </span>
+    </p>
   </div>
 
-  <div className="flex items-center space-x-3">
-    <FaEnvelope className="text-blue-800 w-5 h-5" />
-    <span>
-      E-Mail:{" "}
-      <a href="mailto:jelena.dordevic@buchhalt.de" className="text-blue-800 font-semibold hover:underline">
+  {/* E-Mail */}
+  <div className="flex items-start gap-3">
+    <FaEnvelope className="text-blue-800 w-5 h-5 mt-1" />
+    <p>
+      <span className="font-semibold text-blue-900">E-Mail:</span>{' '}
+      <a
+        href="mailto:jelena.dordevic@buchhalt.de"
+        className="text-blue-800 hover:underline"
+      >
         jelena.dordevic@buchhalt.de
       </a>
-    </span>
+    </p>
   </div>
 </div>
-</section>
+      </section>
+    </div>
   )}

@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-blue-800 text-white font-[Cambria] shadow-md">
-      <div className="max-w-screen-lg mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
+      <div className="max-w-screen-xl mx-auto flex items-center justify-between px-6 py-3 sm:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
@@ -23,7 +23,7 @@ export default function Header() {
 
         {/* Hamburger Button (mobil) */}
         <button
-          className="md:hidden p-2 rounded hover:bg-blue-700"
+          className="md:hidden p-2 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-white"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Menü öffnen"
         >
@@ -50,12 +50,12 @@ export default function Header() {
 
       {/* Navigation (Mobil) */}
       {isOpen && (
-        <div className="md:hidden bg-blue-700 px-4 py-3 space-y-2 text-sm">
-          <nav className="flex flex-col">
-            <Link href="/" className="hover:underline" onClick={() => setIsOpen(false)}>Startseite</Link>
-            <Link href="/about" className="hover:underline" onClick={() => setIsOpen(false)}>Über uns</Link>
-            <Link href="/services" className="hover:underline" onClick={() => setIsOpen(false)}>Leistungen</Link>
-            <Link href="/contact" className="hover:underline" onClick={() => setIsOpen(false)}>Kontakt</Link>
+        <div className="md:hidden bg-blue-700 px-6 py-4 space-y-3 text-sm">
+          <nav className="flex flex-col space-y-2">
+            <Link href="/" onClick={() => setIsOpen(false)} className="hover:underline">Startseite</Link>
+            <Link href="/about" onClick={() => setIsOpen(false)} className="hover:underline">Über uns</Link>
+            <Link href="/services" onClick={() => setIsOpen(false)} className="hover:underline">Leistungen</Link>
+            <Link href="/contact" onClick={() => setIsOpen(false)} className="hover:underline">Kontakt</Link>
           </nav>
         </div>
       )}

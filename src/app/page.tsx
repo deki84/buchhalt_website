@@ -12,7 +12,7 @@ export default function Home() {
 
   <main className="pt-0 mt-0 bg-white text-blue-900 font-[Cambria]">
 <section
-  className="relative h-[50vh] bg-cover bg-center flex items-center justify-center"
+  className="relative h-[35vh] bg-cover bg-center flex items-center justify-center"
   style={{ backgroundImage: "url('/hero-image.png')" }}
 >
         {/* Overlay wenn gewünscht */}
@@ -41,52 +41,37 @@ export default function Home() {
       </section>
   
 
-<div className="mt-10 font-bold italic text-xl text-black max-w-3xl mx-auto border border-dashed border-blue-800 p-4 rounded text-center font-[Cambria]">
-  Erbracht werden ausschließlich Leistungen gem. § 6 Nr. 3 und 4 des StBerG, ohne Rechts- und Steuerberatung.
-</div>
+<div className="bg-white mb-4 pt-4 pb-28 px-4 text-center font-[Cambria]">
+  <h2 className="text-3xl font-bold text-blue-800 mb-4">Kontaktieren Sie uns</h2>
 
-      {/* 🟨 KONTAKTBLOCK unter Hero */}
-<div className="bg-white mb-4 text-center pt-4 px-4">
-  <h2 className="text-3xl font-bold text-blue-800 mb-2 font-[Cambria]">
-    Kontaktieren Sie uns
-  </h2>
-
-  <div className="space-y-1">
-    <p className="text-gray-800 text-base">
-      Telefon:{' '}
-      <a
-        href="tel:+4982144423383"
-        className="text-blue-800 font-semibold hover:underline"
-      >
+  <div className="space-y-2 text-base text-gray-800">
+    <div className="flex justify-center gap-2">
+      <span className="font-semibold text-blue-900">Telefon:</span>
+      <a href="tel:+4982144423383" className="text-blue-800 hover:underline">
         0821 444 233 83
       </a>
-    </p>
-    <p className="text-gray-800 text-base">
-      Email:{' '}
-      <a
-        href="mailto:info@buchhalt.de"
-        className="text-blue-800 font-semibold hover:underline"
-      >
+    </div>
+    <div className="flex justify-center gap-2">
+      <span className="font-semibold text-blue-900">Email:</span>
+      <a href="mailto:info@buchhalt.de" className="text-blue-800 hover:underline">
         info@buchhalt.de
       </a>
-    </p>
+    </div>
   </div>
 
-  {/* Button-Gruppe */}
-  <div className="mt-3 flex flex-col sm:flex-row sm:justify-center gap-2 items-center">
+  {/* Buttons */}
+  <div className="mt-5 flex flex-col sm:flex-row justify-center items-center gap-3">
     <a
       href="tel:+4982144423383"
-      className="bg-blue-800 text-white font-[Cambria] px-5 py-2 rounded-full shadow-md hover:bg-blue-600 transition w-60 sm:w-auto flex items-center justify-center gap-2 text-sm"
+      className="bg-blue-800 text-white px-6 py-2 rounded-full shadow-md hover:bg-blue-600 transition w-60 sm:w-auto flex items-center justify-center gap-2 text-sm"
     >
-      <FaPhone className="text-white rotate-180" />
-      Anrufen
+      📞 Anrufen
     </a>
     <a
       href="mailto:info@buchhalt.de"
-      className="bg-blue-800 text-white font-[Cambria] px-5 py-2 rounded-full shadow-md hover:bg-blue-600 transition w-60 sm:w-auto flex items-center justify-center gap-2 text-sm"
+      className="bg-blue-800 text-white px-6 py-2 rounded-full shadow-md hover:bg-blue-600 transition w-60 sm:w-auto flex items-center justify-center gap-2 text-sm"
     >
-      ✉️
-      E-Mail schreiben
+      ✉️ E-Mail schreiben
     </a>
   </div>
 </div>
