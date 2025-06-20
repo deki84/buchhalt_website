@@ -39,6 +39,21 @@ export default function AboutPage() {
       </div>
   
         {/* Lexware-Hinweis */}
+ <div className="flex flex-col items-center">
+          <p className="text-lg text-gray-700 font-[Cambria] mb-4 max-w-xl">
+            Wir arbeiten mit <strong>Lexware</strong> – Buchhaltungssoftware mit DATEV-Schnittstelle
+          </p>
+        
+        
+
+  <div className="col-span-full flex justify-center">
+    <img
+      src="/lexware-office-logo.png"
+      alt="Lexware Logo"
+      className="w-48 h-auto"
+    />
+  </div>
+</div>
     
       </section>
     );
