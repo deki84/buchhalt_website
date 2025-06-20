@@ -8,22 +8,22 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-blue-800 text-white font-[Cambria]">
-      <div className="max-w-screen-lg mx-auto flex items-center justify-between px-4 py-3">
+    <header className="sticky top-0 z-50 bg-blue-800 text-white font-[Cambria] shadow-md">
+      <div className="max-w-screen-lg mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
             src="/logo_buchhalt.png"
             alt="Logo Buchhalt.de"
-            width={60}
-            height={60}
+            width={48}
+            height={48}
             className="rounded-full"
           />
         </Link>
 
         {/* Hamburger Button (mobil) */}
         <button
-          className="md:hidden"
+          className="md:hidden p-2 rounded hover:bg-blue-700"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Menü öffnen"
         >
@@ -50,8 +50,8 @@ export default function Header() {
 
       {/* Navigation (Mobil) */}
       {isOpen && (
-        <div className="md:hidden bg-blue-700 px-4 pb-4">
-          <nav className="flex flex-col space-y-2 text-sm">
+        <div className="md:hidden bg-blue-700 px-4 py-3 space-y-2 text-sm">
+          <nav className="flex flex-col">
             <Link href="/" className="hover:underline" onClick={() => setIsOpen(false)}>Startseite</Link>
             <Link href="/about" className="hover:underline" onClick={() => setIsOpen(false)}>Über uns</Link>
             <Link href="/services" className="hover:underline" onClick={() => setIsOpen(false)}>Leistungen</Link>

@@ -7,14 +7,14 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <main className="bg-white text-blue-500 font-[Cambria]">
+   
    
 
-  <main className="bg-white text-blue-900 font-[Cambria]">
-      <section
-        className="relative h-[30vh] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/hero-image.png')" }}
-      >
+  <main className="pt-0 mt-0 bg-white text-blue-900 font-[Cambria]">
+<section
+  className="relative h-[50vh] bg-cover bg-center flex items-center justify-center"
+  style={{ backgroundImage: "url('/hero-image.png')" }}
+>
         {/* Overlay wenn gewünscht */}
         <div className="absolute inset-0 bg-blue-800 opacity-50" />
 
@@ -39,7 +39,7 @@ export default function Home() {
           </motion.p>
         </div>
       </section>
-    </main>
+  
 
 <div className="mt-10 font-bold italic text-xl text-black max-w-3xl mx-auto border border-dashed border-blue-800 p-4 rounded text-center font-[Cambria]">
   Erbracht werden ausschließlich Leistungen gem. § 6 Nr. 3 und 4 des StBerG, ohne Rechts- und Steuerberatung.
