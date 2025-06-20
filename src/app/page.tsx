@@ -1,7 +1,5 @@
 'use client';
 
-
-import { FaPhone } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 
