@@ -48,7 +48,7 @@ export default function ServicePage() {
         </ul>
       </div>
 
-          <div className="mt-20 flex flex-col items-center">
+          <div className="mt-10 sm:mt-16 flex flex-col items-center">
     
 <div className="mt+20 mb-10 flex flex-col items-center space-y-2">
   <img

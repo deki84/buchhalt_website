@@ -23,6 +23,7 @@ export default function AgbPage() {
         <p className="mt-6 text-sm text-left text-gray-500 italic">
           Stand: Juni 2025
         </p>
+      
       </div>
     </section>
   );
