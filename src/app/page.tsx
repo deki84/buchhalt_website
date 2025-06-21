@@ -1,6 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { FaPhone, FaMobileAlt, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
+
 
 export default function Home() {
   return (
@@ -34,6 +36,26 @@ export default function Home() {
           </motion.p>
         </div>
       </section>
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.6 }}
+  transition={{ duration: 0.6 }}
+  className="mx-auto mt-10 px-4 sm:px-6"
+>
+  <div className="max-w-4xl mx-auto flex items-center justify-center gap-4 bg-white/90 border border-dotted border-blue-800 px-6 py-4 rounded-md shadow-sm text-blue-900 font-[Cambria] text-sm sm:text-base font-semibold leading-relaxed text-center">
+    
+    <span className="text-yellow-600 text-xl">⚠️</span>
+    
+    <p>
+      Erbracht werden ausschließlich Leistungen gem. § 6 Nr. 3 und 4 des StBerG – 
+      <span className="underline underline-offset-2 decoration-dotted text-black ml-1">keine Rechts- oder Steuerberatung</span>.
+    </p>
+
+    <span className="text-yellow-600 text-xl">⚠️</span>
+  </div>
+</motion.div>
+   
 
       {/* Kontaktbereich */}
       <section className="bg-white px-6 pt-12 pb-28 text-center">
@@ -59,17 +81,25 @@ export default function Home() {
         {/* Call-to-Action Buttons */}
         <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-3">
           <a
-            href="tel:+4982144423383"
-            className="bg-blue-800 text-white px-6 py-2 rounded-full shadow-md hover:bg-blue-600 transition w-60 sm:w-auto flex items-center justify-center gap-2 text-sm sm:text-base"
-          >
-            📞 Anrufen
-          </a>
+  href="tel:+4982144423383"
+  className="bg-blue-800 text-white px-6 py-2 rounded-full shadow-md hover:bg-blue-600 transition w-60 sm:w-auto flex items-center justify-center gap-2 text-sm sm:text-base"
+>
+  <FaPhone className="text-white rotate-180" />
+  Anrufen
+</a>
           <a
             href="mailto:info@buchhalt.de"
-            className="bg-blue-800 text-white px-6 py-2 rounded-full shadow-md hover:bg-blue-600 transition w-60 sm:w-auto flex items-center justify-center gap-2 text-sm sm:text-base"
+            className="bg-blue-800  text-white px-6 py-2 rounded-full shadow-md hover:bg-blue-600 transition w-60 sm:w-auto flex items-center justify-center gap-2 text-sm sm:text-base"
           >
             ✉️ E-Mail schreiben
           </a>
+        </div>
+                   <div className="mt-20 mb-10 flex flex-col items-center">
+          <img
+            src="/lexware-office-logo.png"
+            alt="Lexware Logo"
+            className="w-48 h-auto"
+          />
         </div>
       </section>
     </main>

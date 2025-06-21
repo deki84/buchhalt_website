@@ -16,8 +16,8 @@ export default function DatenschutzPage() {
           Zum Griesle 11<br />
           86169 Augsburg<br />
           E-Mail:{" "}
-          <a href="mailto:kontakt@buchhalt.de" className="text-blue-700 underline">
-            kontakt@buchhalt.de
+          <a href="mailto:jelena.dordevic@buchhalt.de" className="text-blue-700 underline">
+            jelena.dordevic@buchhalt.de
           </a><br />
           Telefon: +49 176 967 245 25<br />
           Gerichtstand: Augsburg

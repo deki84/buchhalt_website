@@ -15,10 +15,14 @@ export default function Header() {
           <Image
             src="/logo_buchhalt.png"
             alt="Logo Buchhalt.de"
-            width={48}
-            height={48}
+            width={80}
+            height={80}
             className="rounded-full"
+            
           />
+           <span className="text-white text-sm sm:text-base md:text-lg font-[Cambria] ">
+    Willkommen auf Buchhalt.de
+  </span>
         </Link>
 
         {/* Hamburger Button (mobil) */}
