@@ -1,11 +1,11 @@
 export default function AgbPage() {
   return (
-    <section className="max-w-4xl mx-auto bg-white pt-4 sm:pt-6  py-12 text-blue-900 font-[Cambria] text-[15px]">
-      <h1 className="text-3xl font-bold mb-8 text-center text-blue-800">
+    <section className="max-w-4xl mx-auto bg-white px-4 sm:px-6 pt-8 pb-20 text-blue-900 font-[Cambria] text-base sm:text-[15px] leading-relaxed">
+      <h1 className="text-2xl sm:text-3xl font-bold mb-8 text-center text-blue-800">
         Allgemeine Geschäftsbedingungen (AGB)
       </h1>
 
-      <div className="space-y-5 leading-relaxed">
+      <div className="space-y-5 text-justify">
         <p><strong className="text-blue-800">§ 1 Geltungsbereich:</strong> Diese AGB gelten für alle Leistungen von Jelena Dordevic, Zum Griesle 11, 86169 Augsburg. Abweichende Bedingungen des Auftraggebers werden nicht anerkannt.</p>
         <p><strong className="text-blue-800">§ 2 Vertragsgegenstand:</strong> Gegenstand sind die in der Auftragsbestätigung beschriebenen Leistungen.</p>
         <p><strong className="text-blue-800">§ 3 Leistungen:</strong> Leistungsumfang und Vorgehen richten sich nach dem Angebot. Änderungen bedürfen der Schriftform.</p>
