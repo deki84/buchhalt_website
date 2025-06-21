@@ -26,20 +26,9 @@ export default function ImpressumPage() {
 
         <hr className="border-t border-blue-200 my-6" />
 
-        <p>
-          <strong className="text-blue-800">Webdesign:</strong><br />
-          — 
-        </p>
-
-        <p>
-          <strong className="text-blue-800">SEO-Agentur und Content-Marketing:</strong><br />
-          —
-        </p>
-
-        <p>
-          <strong className="text-blue-800">Bildmaterial:</strong><br />
-          iStock, Adobe Stock, privat
-        </p>
+     
+<h3 className="font-bold text-blue-800 mb-1">Bildmaterial:</h3>
+<p>iStock, Adobe Stock, privat</p>
       </div>
     </section>
   );
