@@ -5,20 +5,7 @@ export default function ServicePage() {
       <h2 className="text-3xl font-bold text-blue-800 mb-8">Unsere Leistungen</h2>
 
       {/* Lexware Hinweis */}
-      <div className="flex flex-col items-center mb-4">
-    
-     <div className="flex flex-col items-center mb-1">
-  <p className="text-lg text-gray-700 max-w-xl mb-1">
-    Wir arbeiten mit <strong>Lexware</strong> – Buchhaltungssoftware mit DATEV-Schnittstelle
-  </p>
-  <img
-    src="/lexware-office-logo.png"
-    alt="Lexware Logo"
-    className="w-40 h-auto mb-2"
-  />
-</div>
-        
-      </div>
+
 
       {/* Kachelübersicht */}
 <div className="mt-0 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto text-left text-gray-800">        <div className="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition">
@@ -61,8 +48,19 @@ export default function ServicePage() {
         </ul>
       </div>
 
-      {/* Lexware Logo */}
+          <div className="mt-20 flex flex-col items-center">
     
+<div className="mt+20 mb-10 flex flex-col items-center space-y-2">
+  <img
+  
+            src="/lexware-office-logo.png"
+            alt="Lexware Logo"
+            className="w-48 h-auto"
+          />
+
+</div>
+        
+      </div>
     </section>
   );
 }

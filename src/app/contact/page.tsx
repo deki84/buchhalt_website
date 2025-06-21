@@ -12,8 +12,13 @@ export default function ContactPage() {
     <div className="min-h-screen flex-grow flex flex-col">
       <section className="min-h-[80vh] bg-white pt-12 pb-32 px-6 text-center font-[Cambria]">
   <h2 className="text-3xl font-bold text-blue-800 mb-8">Kontaktformular</h2>
+  
 
-  <form className="max-w-xl mx-auto space-y-6 text-left">
+  <form   action="deki1984@hotmail.de"
+  method="POST"
+  encType="text/plain"
+  className="max-w-xl mx-auto space-y-6 text-left">
+
     <div>
       <label htmlFor="name" className="block text-gray-700 mb-1">Name</label>
       <input type="text" id="name" required className="w-full border border-gray-300 rounded px-3 py-2" />

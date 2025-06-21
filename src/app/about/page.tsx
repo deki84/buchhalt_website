@@ -15,10 +15,15 @@ export default function AboutPage() {
         <p className="mt-4">
           Unsere Arbeitsweise ist digital, sorgfältig und persönlich – damit Sie sich auf Ihr Kerngeschäft konzentrieren können.
         </p>
+          <div className="mt-2 flex flex-col items-center w-full">        <p className="text-lg text-gray-700 font-[Cambria] mb-2 max-w-xl">
+          Wir arbeiten mit <strong>Lexware</strong> – Buchhaltungssoftware mit DATEV-Schnittstelle
+        </p></div>
+        
       </div>
+    
 
       {/* Raum-Fotos */}
-      <div className="flex flex-wrap justify-center items-start gap-6 mb-6">
+      <div className="flex flex-wrap justify-center items-start gap-6 mb-6 -mt-6">
         <img
           src="/buchhalt_buero1.jpeg"
           alt="Büroansicht"
@@ -38,9 +43,7 @@ export default function AboutPage() {
 
       {/* Lexware-Hinweis */}
       <div className="flex flex-col  items-center">
-        <p className="text-lg text-gray-700 font-[Cambria] mb-2 max-w-xl">
-          Wir arbeiten mit <strong>Lexware</strong> – Buchhaltungssoftware mit DATEV-Schnittstelle
-        </p>
+    
         <div className="col-span-full flex justify-center mt-[-20px] mb-6">
           <img
             src="/lexware-office-logo.png"
