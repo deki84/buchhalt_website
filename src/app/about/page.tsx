@@ -42,16 +42,15 @@ export default function AboutPage() {
       </div>
 
       {/* Lexware-Hinweis */}
-      <div className="flex flex-col  items-center">
-    
-        <div className="col-span-full flex justify-center mt-[-20px] mb-6">
-          <img
+     <div className="mt+20 mb-10 flex flex-col items-center space-y-2">
+  <img
+  
             src="/lexware-office-logo.png"
             alt="Lexware Logo"
             className="w-48 h-auto"
           />
-        </div>
-      </div>
+
+</div>
     </section>
   );
 }
