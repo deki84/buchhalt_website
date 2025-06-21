@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaPhone } from 'react-icons/fa';
+import { FaPhone,FaMobileAlt, FaEnvelope,FaWhatsapp } from 'react-icons/fa';
 
 
 export default function Home() {
@@ -64,38 +64,48 @@ export default function Home() {
         <h2 className="text-2xl sm:text-3xl font-bold text-blue-800 mb-6">
           Kontaktieren Sie uns
         </h2>
+         <div className="mt-12 flex flex-col items-center justify-center space-y-6 text-base text-gray-800 font-[Cambria] px-4 w-full">
+              
+                {/* Einzelner Kontaktblock */}
+                {[
+                  {
+                    icon: <FaPhone className="text-blue-800 w-5 h-5 rotate-180" />,
+                    label: 'Telefon Festnetz:',
+                    value: '0821 444 233 83',
+                    href: 'tel:+4982144423383'
+                  },
+  {
+  icon: <FaMobileAlt className="text-blue-800 w-5 h-5" />,
+  label: (
+    <span className="flex items-center gap-1">
+      Mobil (auch WhatsApp   <FaWhatsapp className="text-green-500 w-6 h-6" />)
+    
+    </span>
+  ),
+  value: '0176 96724525',
+  href: 'tel:+4917696724525'
+},
+                  {
+                    icon: <FaEnvelope className="text-blue-800 w-5 h-5" />,
+                    label: 'E-Mail:',
+                    value: 'jelena.dordevic@buchhalt.de',
+                    href: 'mailto:jelena.dordevic@buchhalt.de'
+                  }
+                ].map((item, idx) => (
+                  <div key={idx} className="flex flex-col items-center text-center">
+                    <div className="flex items-center gap-2 mb-1">
+                      {item.icon}
+                      <span className="font-semibold text-blue-900">{item.label}</span>
+                    </div>
+                    <a href={item.href} className="text-blue-800 hover:underline">
+                      {item.value}
+                    </a>
+                  </div>
+                ))}
+              
+              </div>
+        
 
-        <div className="space-y-2 text-sm sm:text-base text-gray-800">
-          <div className="flex justify-center gap-2">
-            <span className="font-semibold text-blue-900">Telefon:</span>
-            <a href="tel:+4982144423383" className="text-blue-800 hover:underline">
-              0821 444 233 83
-            </a>
-          </div>
-          <div className="flex justify-center gap-2">
-            <span className="font-semibold text-blue-900">Email:</span>
-            <a href="mailto:info@buchhalt.de" className="text-blue-800 hover:underline">
-              info@buchhalt.de
-            </a>
-          </div>
-        </div>
-
-        {/* Call-to-Action Buttons */}
-        <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-3">
-          <a
-  href="tel:+4982144423383"
-  className="bg-blue-800 text-white px-6 py-2 rounded-full shadow-md hover:bg-blue-600 transition w-60 sm:w-auto flex items-center justify-center gap-2 text-sm sm:text-base"
->
-  <FaPhone className="text-white rotate-180" />
-  Anrufen
-</a>
-          <a
-            href="mailto:info@buchhalt.de"
-            className="bg-blue-800  text-white px-6 py-2 rounded-full shadow-md hover:bg-blue-600 transition w-60 sm:w-auto flex items-center justify-center gap-2 text-sm sm:text-base"
-          >
-            ✉️ E-Mail schreiben
-          </a>
-        </div>
                    <div className="mt-20 mb-10 flex flex-col items-center">
           <img
             src="/lexware-office-logo.png"

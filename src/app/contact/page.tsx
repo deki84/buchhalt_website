@@ -17,6 +17,7 @@ export default function Kontaktseite() {
             <h2 className="text-lg font-semibold mb-2 flex items-center gap-2">
               <FaMapMarkerAlt className="text-blue-700" /> Adresse
             </h2>
+            <p>buchhalt.de</p>
             <p>Jelena Dordevic<br />Zum Griesle 11<br />86169 Augsburg</p>
           </div>
 

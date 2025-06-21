@@ -1,4 +1,4 @@
-import { FaPhone, FaMobileAlt, FaEnvelope } from "react-icons/fa";
+import { FaPhone, FaMobileAlt, FaEnvelope,FaWhatsapp} from "react-icons/fa";
 
 export default function AboutPage() {
   return (
@@ -54,7 +54,10 @@ export default function AboutPage() {
           },
           {
             icon: <FaMobileAlt className="text-blue-800 w-5 h-5" />,
-            label: 'Mobil (auch WhatsApp):',
+            label:  ( <span className="flex items-center gap-1">
+      Mobil (auch WhatsApp   <FaWhatsapp className="text-green-500 w-6 h-6" />)
+    
+    </span>),
             value: '0176 96724525',
             href: 'tel:+4917696724525'
           },

@@ -21,7 +21,7 @@ export default function Header() {
             
           />
            <span className="text-white text-sm sm:text-base md:text-lg font-[Cambria] ">
-    Willkommen auf buchhalt.de
+    Willkommen auf {'\u00A0'}buchhalt.de
   </span>
         </Link>
 
