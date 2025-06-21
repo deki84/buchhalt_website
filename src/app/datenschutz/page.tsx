@@ -60,7 +60,7 @@ export default function DatenschutzPage() {
           <strong className="text-blue-800">7. Ihre Rechte</strong><br />
           Sie haben u. a. Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch. Kontakt:{" "}
           <a href="mailto:kontakt@buchhalt.de" className="text-blue-700 underline">
-            kontakt@buchhalt.de
+            jelena.dordevic@buchhalt.de
           </a>
         </p>
 

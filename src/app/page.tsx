@@ -8,34 +8,46 @@ export default function Home() {
   return (
     <main className="bg-white text-blue-900 font-[Cambria]">
       {/* Hero Section */}
-      <section
-        className="relative h-[35vh] sm:h-[45vh] md:h-[60vh] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/hero-image.png')" }}
-      >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-blue-800 opacity-50" />
+<section
+  className="relative h-[35vh] sm:h-[45vh] md:h-[60vh] bg-cover bg-center flex items-center justify-center"
+  style={{ backgroundImage: "url('/hero-image.png')" }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-blue-800 opacity-50" />
 
-        {/* Animated Text */}
-        <div className="relative z-10 text-center text-white px-4">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-3xl sm:text-4xl md:text-6xl font-extrabold drop-shadow"
-          >
-            Ihre zuverlässige Buchhaltung
-          </motion.h1>
+  {/* Animated Text */}
+  <div className="relative z-10 text-center text-white px-4">
+    {/* Neue Zeile: buchhalt.de */}
+    <motion.h1
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="text-6xl sm:text-7xl md:text-8xl font-black tracking-wide lowercase drop-shadow-lg"
+    >
+      buchhalt.de
+    </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
-            className="text-base sm:text-lg md:text-2xl mt-4 drop-shadow"
-          >
-            Professionell, sorgfältig und digital.
-          </motion.p>
-        </div>
-      </section>
+    {/* Bestehender Titel */}
+    <motion.h2
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.5 }}
+      className="text-2xl text-gray-100  sm:text-3xl md:text-5xl font-extrabold drop-shadow"
+    >
+      Ihre zuverlässige Buchhaltung
+    </motion.h2>
+
+    {/* Unterzeile */}
+    <motion.p
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 1.2 }}
+      className="text-sm sm:text-base md:text-xl mt-4 drop-shadow"
+    >
+      Professionell, sorgfältig und digital.
+    </motion.p>
+  </div>
+</section>
 <motion.div
   initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
@@ -43,17 +55,7 @@ export default function Home() {
   transition={{ duration: 0.6 }}
   className="mx-auto mt-10 px-4 sm:px-6"
 >
-  <div className="max-w-4xl mx-auto flex items-center justify-center gap-4 bg-white/90 border border-dotted border-blue-800 px-6 py-4 rounded-md shadow-sm text-blue-900 font-[Cambria] text-sm sm:text-base font-semibold leading-relaxed text-center">
-    
-    <span className="text-yellow-600 text-xl">⚠️</span>
-    
-    <p>
-      Erbracht werden ausschließlich Leistungen gem. § 6 Nr. 3 und 4 des StBerG – 
-      <span className="underline underline-offset-2 decoration-dotted text-black ml-1">keine Rechts- oder Steuerberatung</span>.
-    </p>
 
-    <span className="text-yellow-600 text-xl">⚠️</span>
-  </div>
 </motion.div>
    
 
@@ -102,6 +104,16 @@ export default function Home() {
           />
         </div>
       </section>
+ <div className="w-full bg-gray-100 border-t border-blue-800 py-4 overflow-hidden">
+  <div className="animate-marquee whitespace-nowrap text-blue-900 text-sm sm:text-base font-[Cambria] font-semibold">
+    <span className="inline-block px-6">
+      Erbracht werden ausschließlich Leistungen gem. §6 Nr.3 und 4 des StBerG – 
+      <span className="underline underline-offset-2 decoration-dotted text-black ml-1">
+        keine Rechts- oder Steuerberatung
+      </span>.
+    </span>
+  </div>
+</div>
     </main>
   );
 }
