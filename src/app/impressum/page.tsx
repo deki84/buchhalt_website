@@ -21,7 +21,7 @@ export default function ImpressumPage() {
           <a href="tel:+4917696724525" className="text-blue-700 underline">+49 176 967 245 25</a><br />
           <strong className="text-blue-800">E-Mail:</strong>{" "}
           <a href="mailto:jelena.dordevic@buchhalt.de" className="text-blue-700 underline">jelena.dordevic@buchhalt.de</a><br />
-          <strong className="text-blue-800">Gerichtstand:</strong> Augsburg
+          <strong className="text-blue-800">Gerichtsstand:</strong> Augsburg
         </p>
 
         <hr className="border-t border-blue-200 my-6" />
