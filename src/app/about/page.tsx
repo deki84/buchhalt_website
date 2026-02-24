@@ -1,5 +1,5 @@
 import { FaPhone, FaMobileAlt, FaEnvelope,FaWhatsapp} from "react-icons/fa";
-
+import Image from 'next/image'
 export default function AboutPage() {
   return (
     <section id="about" className="bg-white pt-8 pb-20 px-6 text-center">
@@ -26,17 +26,17 @@ export default function AboutPage() {
 
       {/* Raum-Fotos */}
       <div className="flex flex-wrap justify-center items-start gap-6 mb-6 -mt-6">
-        <img
+        <Image
           src="/buchhalt_buero1.jpeg"
           alt="Büroansicht"
           className="w-72 rounded-lg shadow-md"
         />
-        <img
+        <Image
           src="/buchhalt_buero2.jpeg"
           alt="Besprechungsraum"
           className="w-72 rounded-lg shadow-md"
         />
-        <img
+        <Image
           src="/buchhalt_buero3.jpeg"
           alt="Empfangsbereich"
           className="w-72 rounded-lg shadow-md"
@@ -83,7 +83,7 @@ export default function AboutPage() {
 
       {/* Lexware-Hinweis */}
    <div className="mt-16 mb-10 flex flex-col items-center space-y-2">
-  <img
+  <Image
     src="/lexware-office-logo.png"
     alt="Lexware Logo"
     className="w-48 h-auto"
