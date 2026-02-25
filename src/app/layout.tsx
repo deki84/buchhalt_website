@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Buchhaltung in Augsburg – Professionell & digital | buchhalt.de',
   description: 'Professionelle Buchhaltung in Augsburg für kleine und mittelständische Unternehmen. Digital, sorgfältig und persönlich. Lexware mit DATEV-Schnittstelle. Jetzt Kontakt aufnehmen!',
   keywords: 'Buchhaltung Augsburg, Buchhalter Augsburg, Buchhaltungsservice, Lexware, DATEV, kleine Unternehmen, digitale Buchhaltung',
+  verification: {
+  google: '4xHDRSAkqJNkhltZLBsZ9NLKu3pknWpI8hAtWzh8LqI', // Google Verfication Code
+},
   openGraph: {
     title: 'Buchhaltung in Augsburg – buchhalt.de',
     description: 'Professionelle Buchhaltung für kleine und mittelständische Unternehmen in Augsburg.',
