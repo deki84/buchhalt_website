@@ -5,8 +5,15 @@ import { Metadata } from 'next'
 
 // SEO-Metadaten
 export const metadata: Metadata = {
-  title: 'Buchhaltung in Augsburg – Professionell & digital',
-  description: 'Professionelle Buchhaltung – digital, sorgfältig und persönlich. Jetzt informieren!',
+  title: 'Buchhaltung in Augsburg – Professionell & digital | buchhalt.de',
+  description: 'Professionelle Buchhaltung in Augsburg für kleine und mittelständische Unternehmen. Digital, sorgfältig und persönlich. Lexware mit DATEV-Schnittstelle. Jetzt Kontakt aufnehmen!',
+  keywords: 'Buchhaltung Augsburg, Buchhalter Augsburg, Buchhaltungsservice, Lexware, DATEV, kleine Unternehmen, digitale Buchhaltung',
+  openGraph: {
+    title: 'Buchhaltung in Augsburg – buchhalt.de',
+    description: 'Professionelle Buchhaltung für kleine und mittelständische Unternehmen in Augsburg.',
+    locale: 'de_DE',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

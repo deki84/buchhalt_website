@@ -29,16 +29,22 @@ export default function AboutPage() {
         <Image
           src="/buchhalt_buero1.jpeg"
           alt="Büroansicht"
+          width={288} 
+          height={200}
           className="w-72 rounded-lg shadow-md"
         />
         <Image
           src="/buchhalt_buero2.jpeg"
           alt="Besprechungsraum"
+          width={288}
+          height={200}
           className="w-72 rounded-lg shadow-md"
         />
         <Image
           src="/buchhalt_buero3.jpeg"
           alt="Empfangsbereich"
+          width={288} 
+          height={200}
           className="w-72 rounded-lg shadow-md"
         />
       </div>
@@ -86,6 +92,8 @@ export default function AboutPage() {
   <Image
     src="/lexware-office-logo.png"
     alt="Lexware Logo"
+    width={288}
+     height={200}
     className="w-48 h-auto"
   />
 </div>
